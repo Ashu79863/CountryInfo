@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100vw;
+        }
+        .center{
+            width: 70%;
+            margin: auto;
+        }
+        .first,.second{
+            width: 100%;
+
+        }
+        img{
+            width: 100%;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr{
+            background-color: bisque;
+        }
+        tr:nth-child(odd){
+          background-color: beige;  
+        }
+        th,td{
+            padding: 10px, 0;
+        }
+        input{
+            width: 90%;
+            padding: 10px, 0;
+        }
+        button{
+            background-color: rgb(28, 213, 44);
+            color: rgb(221, 229, 221);
+            border: none;
+            padding: 10px,0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <div class="first">
+                <form onsubmit="fun();return false">
+                    <input type="search" id="search" placeholder="Enter the country to search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="second">
+                <table>
+                    <tr>
+                        
+                        <td colspan="2"><img id="flag"</td>
+                    </tr>
+                    <tr>
+                        <th>Name</th>
+                        <td id="name"></td>
+                    </tr>
+                    <tr>
+                        <th>Capital</th>
+                        <td id="capital"></td>
+                    </tr>
+                    <tr>
+                        <th>Borders</th>
+                        <td id="borders"></td>
+                    </tr>
+                    <tr>
+                        <th>TimeZone</th>
+                        <td id="timezone"></td>
+                    </tr>
+                    <tr>
+                        <th>Population</th>
+                        <td id="population"></td>
+                    </tr>
+                    <tr>
+                        <th>Area</th>
+                        <td id="area"></td>
+                    </tr>
+                    <tr>
+                        <th>Independent</th>
+                        <td id="independent"></td>
+                    </tr>
+                    <tr>
+                        <th>LandLocked</th>
+                        <td id="landlocked"></td>
+                    </tr>
+                    <tr>
+                        <th>Start of Week</th>
+                        <td id="startofweek"></td>
+                    </tr>
+                    <tr>
+                        <th>Region</th>
+                        <td id="region"></td>
+                    </tr>
+                    <tr>
+                        <th>Subregion</th>
+                        <td id="subregion"></td>
+                    </tr>
+                    <tr>
+                        <th>Map</th>
+                        <td><a id="maps">Visit Map</a></td>
+                    </tr>
+                    <tr>
+                        <th>UN Member</th>
+                        <td id="unmember"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
